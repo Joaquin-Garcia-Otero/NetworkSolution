@@ -4,74 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetworkSolution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="imagen de logo">
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Sobre Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__menu">
+                <img src="logo.png" alt="imagen logo" class="header__logo">
+                <div class="header__mobile">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                </div>
+            </div>
+            
+            <nav>
+                <ul class="header__navegacion">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__linea"></div>
     </header>
     <main>
-        <div id="inicio">
-            <img src="inicio.jpg" alt="imagen de inicio">
-            <p>Network Solution es una empresa líder en el sector de las telecomunicaciones, especializada en proporcionar servicios de internet de alta velocidad y confiabilidad. Desde nuestra fundación en 2024, nos hemos comprometido a conectar a personas y comunidades a través de soluciones de conectividad innovadoras y accesibles.</p>
+        <div id="inicio" class="inicio">
+            <img src="inicio.jpg" alt="imagen de inicio" class="inicio__imagen">
+            <div class="inicio__parrafo">
+                <p>Network Solution es una empresa líder en el sector de las telecomunicaciones, especializada en proporcionar servicios de internet de alta velocidad y confiabilidad. Desde nuestra fundación en 2024, nos hemos comprometido a conectar a personas y comunidades a través de soluciones de conectividad innovadoras y accesibles.</p>  
+            </div>
         </div>
-        <div id="servicios">
-            <h2>Servicios</h3>
-                <div>
-                    <img src="gold.png" alt="icono de gold">
-                    <h3>Conexion Gold</h3>
-                    <p>Internet 200MB</p>
-                    <p>Disfruta de tus paginas favoritas y servicios de streaming</p>
-                    <p>$6.500 final por mes</p>
+        <div id="servicios" class="servicios">
+            <h2 class="servicios__titulo">Servicios</h3>
+                <p class="servicios__subtitulo">Explora todos los planes de internet que tenemos para vos</p>
+                <div class="servicios__promocion">
+                    <p href="#">Mensual</p>
+                    <p href="#" class="servicios__promocion--seleccionado">Anual .20% off</p>
                 </div>
-                <div>
-                    <img src="platinum.png" alt="icono de platinum">
-                    <h3>Conexion Platinum</h3>
-                    <p>Internet 600MB</p>
-                    <p>Navega sin complicaciones a una gran velocidad</p>
-                    <p>$10.000 final por mes</p>
-                </div>
-                <div>
-                    <img src="black.png" alt="icono de black">
-                    <h3>Conexion Black</h3>
-                    <p>Internet 1000MB</p>
-                    <p>Conectate a todo con la mas alta velocidad</p>
-                    <p>$15.000 final por mes</p>
+                <div class="servicios__planes">
+                    <div class="servicios__plan">
+                        <img src="gold.png" alt="icono de gold">
+                        <div class="servicios__descripcion">
+                            <div class="servicios__nombre">
+                                <h3>Gold</h3>
+                                <p class="servicios__velocidad">200MB</p>
+                            </div>
+                            <p class="servicios__precios"><span>$6.500</span>/mes</p>
+                            <p class="servicios__parrafo">Disfruta de tus paginas favoritas y servicios de streaming</p>
+                            <button>Empieza a ser Gold ></button>
+                        </div>
+                    </div>
+                    <div class="servicios__plan">
+                        <img src="platinum.png" alt="icono de platinum">
+                        <div class="servicios__descripcion">
+                            <div class="servicios__nombre">
+                                <h3>Platinum</h3>
+                                <p class="servicios__velocidad">600MB</p>
+                            </div>
+                            <p class="servicios__precios"><span>$10.000</span>/mes</p>
+                            <p class="servicios__parrafo">Navega sin complicaciones a una gran velocidad</p>
+                            <button>Empieza a ser Platinum ></button>
+                        </div>
+                    </div>
+                    <div class="servicios__plan">
+                        <img src="black.png" alt="icono de black">
+                        <div class="servicios__descripcion">
+                            <div class="servicios__nombre">
+                                <h3>Black</h3>
+                                <p class="servicios__velocidad">1000MB</p>
+                            </div>
+                            <p class="servicios__precios"><span>$15.000</span>/mes</p>
+                            <p class="servicios__parrafo">Conectate a todo con la mas alta velocidad</p>
+                            <button>Empieza a ser Black ></button>
+                        </div>
+                    </div>
                 </div>
         </div>
-        <div id="nosotros">
-            <h2>Sobre Nosotros</h2>
-            <h3>Misión</h3>
-            <p>Proporcionar soluciones de internet confiables y de alta calidad que satisfagan las necesidades de conectividad de nuestros clientes, ofreciendo un servicio excepcional y una experiencia sin igual.</p>
-            <h3>Visión</h3>
-            <p>Convertirnos en el proveedor líder de servicios de internet, reconocido por nuestra innovación, fiabilidad y compromiso con la satisfacción del cliente, y contribuir al desarrollo digital de las comunidades a las que servimos.</p>
-            <h2>Valores</h2>
-            <ul>
-                <li>Exelencia</li>
-                <li>Compromiso</li>
-                <li>Innovacion</li>
-                <li>Integridad</li>
-                <li>Responsabilidad</li>
-            </ul>
+        <div id="nosotros" class="nosotros">
+            <h2 class="nosotros__titulo">Sobre Nosotros</h2>
+            <div class="nosotros__contenedor">
+                <div class="nosotros__descripcion">
+                    <h3 class="nosotros__descripcion--subtitulo">Misión</h3>
+                    <p class="nosotros__descripcion--parrafo">Proporcionar soluciones de internet confiables y de alta calidad que satisfagan las necesidades de conectividad de nuestros clientes, ofreciendo un servicio excepcional y una experiencia sin igual.</p>
+                </div>
+                <div class="nosotros__invertido">
+                    <h3 class="nosotros__invertido--subtitulo">Visión</h3>
+                    <p class="nosotros__invertido--parrafo">Convertirnos en el proveedor líder de servicios de internet, reconocido por nuestra innovación, fiabilidad y compromiso con la satisfacción del cliente, y contribuir al desarrollo digital de las comunidades a las que servimos.</p>
+                </div>
+                <div class="nosotros__descripcion">
+                    <h2 class="nosotros__descripcion--subtitulo">Valores</h2>
+                    <ul class="nosotros__descripcion--lista">
+                        <li>Excelencia</li>
+                        <li>Compromiso</li>
+                        <li>Innovacion</li>
+                        <li>Integridad</li>
+                        <li>Responsabilidad</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div id="contacto">
-            <h2>Contacto</h2>
-            <p>Email: contacto@networksolution.com</p>
-            <p>Telefono: 4123-4478</p>
-            <p>Celular/Whatsapp: 12-3456-7890</p>
+        <div id="contacto" class="contacto">
+            <div class="contacto__informacion"">
+                <h2 class="contacto__informacion--titulo">Contactenos</h2>
+                <p class="contacto__informacion--parrafo">Contáctenos para mas detalles o para brindarle asistencia.</p>
+                <p>Email: contacto@networksolution.com</p>
+                <p>Telefono: 4123-4478</p>
+                <p>Celular/Whatsapp: 12-3456-7890</p>
+            </div>
+            <form action="" method="" class="contacto__formulario">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre" class="contacto__formulario--input">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email" class="contacto__formulario--input">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="contacto__formulario--input">Ingrese su mensaje</textarea>
+                <input type="submit" value="Enviar" class="contacto__formulario--boton">
+            </form>
         </div>
     </main>
-    <footer>
-        <p>Network Solution</p>
-        <p>Todos los derechos reservados</p>
-        <p>Joaquin Garcia Otero</p>
+    <footer class="footer">
+        <div class="footer__linea"></div>
+        <div class="footer__contenedor">
+            <img class="footer__logo" src="logo.png" alt="imagen de logo">
+            <div class="footer__separador"></div>
+            <div class="footer__detalle">
+                <p>Joaquin Garcia Otero - Todos los derechos reservados</p>
+                <div class="footer__detalle--iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
